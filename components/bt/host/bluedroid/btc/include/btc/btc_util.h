@@ -35,10 +35,15 @@ typedef char bdstr_t[18];
 /*******************************************************************************
 **  Functions
 ********************************************************************************/
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #if(BTA_AV_INCLUDED == TRUE)
 const char *dump_rc_event(UINT8 event);
 const char *dump_rc_notification_event_id(UINT8 event_id);
 const char *dump_rc_pdu(UINT8 pdu);
+const char *dump_hd_event(uint16_t event);
 #endif
 
 #if(BTA_AG_INCLUDED == TRUE)
@@ -57,5 +62,9 @@ void uuid_to_string_legacy(bt_uuid_t *p_uuid, char *str);
 esp_bt_status_t btc_hci_to_esp_status(uint8_t hci_status);
 esp_bt_status_t btc_btm_status_to_esp_status (uint8_t btm_status);
 esp_bt_status_t btc_bta_status_to_esp_status (uint8_t bta_status);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /*  __BTC_UTIL_H__ */

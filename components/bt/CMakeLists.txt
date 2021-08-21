@@ -56,6 +56,7 @@ if(CONFIG_BT_ENABLED)
             host/bluedroid/bta/hf_ag/include
             host/bluedroid/bta/hf_client/include
             host/bluedroid/bta/hh/include
+            host/bluedroid/bta/hd/include
             host/bluedroid/bta/jv/include
             host/bluedroid/bta/sdp/include
             host/bluedroid/bta/sys/include
@@ -72,6 +73,7 @@ if(CONFIG_BT_ENABLED)
             host/bluedroid/stack/btm/include
             host/bluedroid/stack/gap/include
             host/bluedroid/stack/gatt/include
+            host/bluedroid/stack/hid/include
             host/bluedroid/stack/l2cap/include
             host/bluedroid/stack/sdp/include
             host/bluedroid/stack/smp/include
@@ -96,6 +98,7 @@ if(CONFIG_BT_ENABLED)
                    "host/bluedroid/api/esp_gatts_api.c"
                    "host/bluedroid/api/esp_hf_ag_api.c"
                    "host/bluedroid/api/esp_hf_client_api.c"
+                   "host/bluedroid/api/esp_hidd_api.c"
                    "host/bluedroid/api/esp_spp_api.c"
                    "host/bluedroid/bta/ar/bta_ar.c"
                    "host/bluedroid/bta/av/bta_av_aact.c"
@@ -128,6 +131,9 @@ if(CONFIG_BT_ENABLED)
                    "host/bluedroid/bta/gatt/bta_gatts_co.c"
                    "host/bluedroid/bta/gatt/bta_gatts_main.c"
                    "host/bluedroid/bta/gatt/bta_gatts_utils.c"
+                   "host/bluedroid/bta/hd/bta_hd_api.cc"
+                   "host/bluedroid/bta/hd/bta_hd_act.cc"
+                   "host/bluedroid/bta/hd/bta_hd_main.cc"
                    "host/bluedroid/bta/hh/bta_hh_act.c"
                    "host/bluedroid/bta/hh/bta_hh_api.c"
                    "host/bluedroid/bta/hh/bta_hh_cfg.c"
@@ -193,6 +199,7 @@ if(CONFIG_BT_ENABLED)
                    "host/bluedroid/btc/profile/std/gatt/btc_gatt_util.c"
                    "host/bluedroid/btc/profile/std/gatt/btc_gattc.c"
                    "host/bluedroid/btc/profile/std/gatt/btc_gatts.c"
+                   "host/bluedroid/btc/profile/std/hidd/btc_hd.cc"
                    "host/bluedroid/btc/profile/std/spp/btc_spp.c"
                    "host/bluedroid/device/bdaddr.c"
                    "host/bluedroid/device/controller.c"
@@ -287,6 +294,8 @@ if(CONFIG_BT_ENABLED)
                    "host/bluedroid/stack/gatt/gatt_utils.c"
                    "host/bluedroid/stack/hcic/hciblecmds.c"
                    "host/bluedroid/stack/hcic/hcicmds.c"
+                   "host/bluedroid/stack/hid/hidd_api.cc"
+                   "host/bluedroid/stack/hid/hidd_conn.cc"
                    "host/bluedroid/stack/l2cap/l2c_api.c"
                    "host/bluedroid/stack/l2cap/l2c_ble.c"
                    "host/bluedroid/stack/l2cap/l2c_csm.c"

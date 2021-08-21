@@ -531,9 +531,9 @@ void btm_ble_periodic_adv_sync_lost_evt(tBTM_BLE_PERIOD_ADV_SYNC_LOST *params);
 void btm_ble_periodic_adv_sync_establish_evt(tBTM_BLE_PERIOD_ADV_SYNC_ESTAB *params);
 #endif // #if (BLE_50_FEATURE_SUPPORT == TRUE)
 
-/*
+
 #ifdef __cplusplus
 }
 #endif
-*/
+
 #endif
