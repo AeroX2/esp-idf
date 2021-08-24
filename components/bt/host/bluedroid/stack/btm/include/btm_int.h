@@ -961,12 +961,10 @@ extern tBTM_CallbackFunc conn_param_update_cb;
 
 typedef UINT8 tBTM_SEC_ACTION;
 
-/*
 #ifdef __cplusplus
 extern "C"
 {
 #endif
-*/
 
 #if BTM_DYNAMIC_MEMORY == FALSE
 extern tBTM_CB  btm_cb;
@@ -1228,10 +1226,8 @@ BOOLEAN btm_find_sec_dev_in_list (void *p_node_data, void *context);
 
 BOOLEAN btm_sec_dev_authorization(BD_ADDR bd_addr, BOOLEAN authorized);
 
-/*
 #ifdef __cplusplus
 }
 #endif
-*/
 
 #endif

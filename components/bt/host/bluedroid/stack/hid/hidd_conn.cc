@@ -24,18 +24,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//#include "bt_types.h"
+
+#include "btm_int.h"
+#include "common/bt_defs.h"
+#include "common/bt_target.h"
+#include "hidd_int.h"
+#include "osi/allocator.h"
+#include "osi/osi.h"
+#include "stack/bt_types.h"
+#include "stack/btm_api.h"
+#include "stack/btu.h"
+#include "stack/hidd_api.h"
+#include "stack/hiddefs.h"
 #include "stack/l2c_api.h"
 #include "stack/l2cdefs.h"
-#include "stack/btm_api.h"
-#include "btm_int.h"
-#include "stack/btu.h"
-#include "stack/hiddefs.h"
-//#include "bt_utils.h"
-#include "stack/hidd_api.h"
-#include "hidd_int.h"
-#include "osi/osi.h"
-#include "osi/allocator.h"
 
 #if (HID_DEV_INCLUDED == TRUE)
 static void hidd_l2cif_connect_ind(BD_ADDR bd_addr, uint16_t cid, uint16_t psm,

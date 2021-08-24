@@ -122,9 +122,9 @@ config BT_BLE_ENABLED
         This enables Bluetooth Low Energy
 
 config BT_HID_DEV_ENABLED
-    bool "HIDD"
-    depends on CLASSIC_BT_ENABLED
-    default y
+    bool "Classic BT HID Dev"
+    depends on BT_CLASSIC_ENABLED
+    default n
     help
         This enables HID Device support.
 
